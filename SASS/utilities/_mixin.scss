@@ -1,0 +1,12 @@
+@use "../utilities/variables" as *;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}

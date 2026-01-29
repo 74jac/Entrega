@@ -1,104 +1,111 @@
 /* Reseteo del CSS */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Bloque base */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Modificadores de bloque */
 .card {
-border: 1px solid #ccc;
-padding: 20px;
-margin: 15px;
-background-color: #fff;
-border-radius: 6px;
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  padding: 20px;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 6px;
 }
 
-/* Modificador del bloque */
-.container{
-    border-color: black;
+.container {
+  border-color: black;
 }
 
 .card--featured {
-border-color: gold;
-background-color: #fffbe6;
+  border-color: gold;
+  background-color: #fffbe6;
 }
 
-/* Elementos */
+/*Elementos*/
 .card__title {
-font-size: 1.5rem;
-margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .card__description {
-font-size: 1rem;
-margin-bottom: 15px;
+  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 .card__button {
-padding: 10px 15px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/* Modificadores de elementos */
+/*Modificadores de elementos*/
 .card__button--primary {
-background-color: #007bff;
-color: white;
+  background-color: #007bff;
+  color: white;
 }
 
-.card__button--secondary {
-background-color: #6c757d;
-color: white;
+.card__button--secundary {
+  background-color: #6c757d;
+  color: white;
 }
 
-/* Estilo del Header */
-header{
-    color: gray;
-    text-align: center
+header {
+  justify-content: space-between;
+  text-align: center;
+  color: gray;
+}
+header img {
+  width: 20%;
+}
+header h1 {
+  color: tomato;
+  text-align: center;
+}
+header h2 {
+  color: gold;
+  text-align: center;
 }
 
-/* Estilo del Nav */
-nav a:hover {
-color: orange; /* el texto se vuelve naranja */
-text-decoration: underline;
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
-nav{
-text-align: center;
-color: blueviolet;
-
-
+main h1 {
+  color: gold;
 }
-/* Estilo del Main */
-.grid{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-
+main h2 {
+  color: tomato;
+  text-align: center;
+}
+main h3 {
+  color: blue;
+  text-align: left;
+  padding: 10px;
+  border: 5px;
+}
+main section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: white;
+}
+main div {
+  padding: 10px;
+  border: 10px;
+  text-align: justify;
 }
 
-
-/* Estilo del h1 */
-h1{
-color: red;
+footer {
+  text-align: center;
+  color: #007bff;
 }
 
-/* Estilo del h2 */
-h2{
-    color: green;
-}
-
-/* Estilo del Footer */
-footer{
-    text-align: center;
-    color: blue;
-
-}
-/* medias*/
-
-@media(min-width: 600px) {
-    
-} 
-
+/*# sourceMappingURL=style.css.map */
