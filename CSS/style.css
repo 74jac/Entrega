@@ -9,13 +9,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*Modificadores de bloque */
 .card {
-  border: 1px solid rgba(204, 204, 204, 0.8);
-  padding: 20px;
-  margin: 15px;
-  background-color: #fff;
-  border-radius: 6px;
+  animation: fadeIn 0.8s ease-in-out;
+  border-color: gold;
+}
+.card .btn-primary {
+  transition: all 0.3s ease;
+}
+.card .btn-primary:hover {
+  background-color: rgb(0, 98.4, 204);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -75,7 +90,7 @@ header h2 {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
 }
 main h1 {
@@ -93,7 +108,7 @@ main h3 {
 }
 main section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
   background-color: white;
 }

@@ -3,14 +3,15 @@
 
 
 /*Modificadores de bloque */
-
 .card {
-border: 1px solid $color-border;
-padding: 20px;
-margin: 15px;
-background-color: $color-primario;
-border-radius: 6px;
+  animation: fadeIn 0.8s ease-in-out;
+  border-color: $color-card-border; // Usa tus variables
+  
+  .btn-primary {
+    @include button-hover($color-card-buttonp-back);
+  }
 }
+
 .container{
 border-color: $color-container;
 }
